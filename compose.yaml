@@ -1,0 +1,12 @@
+services:
+  spring-jni:
+    image: 'nicolasls/springboot-jni-0.0.1-snapshot:latest'
+    ports:
+      - '8083:8080'
+    networks:
+      - red-backend-app
+networks:
+  red-backend-app:
+    driver: bridge
+
+
